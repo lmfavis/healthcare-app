@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', Arial, Helvetica, sans-serif;
+	background-color: #eee;
+	color: #333;
+}
+
+/* Navbar */
+
+.nav-container {
+	background-color: #fff;
+}
+
+.nav-container > div {
+	min-height: 75px;
+}
+
+.nav-logo {
+	margin: 0;
+}
+
+.list-inline {
+	margin: 0;
+}
+
+.list-inline > li {
+	margin: 0 2em;
+	font-weight: bold;
+}
+
+.list-inline > li > a {
+	color: #333;
+	transition: all 0.3s ease;
+}
+
+.list-inline > li > a:hover {
+	text-decoration: none;
+	color: rgb(255, 201, 52);
+}
+
+/* Showcase */
+
+.showcase-container {
+	margin-top: 3em;
+}
+
+.showcase-title {
+	font-size: 5rem;
+}
+
+.highlight {
+	color: rgb(255, 201, 52);
+	font-weight: 500;
+}
+
+.showcase-title-sub {
+	color: #666;
+}
+
+.btn-custom {
+	font-size: 1rem;
+	padding: 0.8em 1.75em;
+}
+
+.showcase-img {
+	width: 35%;
+}
+
+/* About */
+
+.about-container {
+	margin-top: 5em;
+}
+
+.about-img {
+	position: relative;
+}
+
+.about-img > img {
+	position: absolute;
+	top: 50px;
+	width: 45%;
+}
+
+.about-img > .about-question {
+	position: relative;
+	left: 120px;
+}
+
+.question-highlight {
+	font-size: 2.5rem;
+	color: rgb(103, 81, 199);
+}
+
+.about-container ul {
+	width: 50%;
+}
+
+.about-container span {
+	font-size: 2rem;
+	margin-right: 0.3em;
+	color: rgb(255, 201, 52);
+}
+
+.about-container li {
+	margin-bottom: 3em;
+}
+
+/* To Do */
+
+.todo-container {
+	margin-top: 11em;
+}
+
+.todo-title {
+	margin-bottom: 5em;
+}
+
+.todo-title > h1 {
+	font-size: 2rem;
+}
+
+.card {
+	height: 520px;
+	width: 30%;
+}
+
+.card-header {
+	height: 300px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.card-img {
+	width: 100%;
+}
+
+.card-custom-1 {
+	background-color: rgb(255, 201, 52);
+}
+
+.card-custom-2 {
+	background-color: rgb(130, 163, 255);
+}
+
+.card-body {
+	position: relative;
+}
+
+.btn-todo {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+/* Download */
+
+.download-container {
+	margin-top: 5em;
+	background-color: rgb(255, 201, 52);
+}
+
+.custom-container {
+    min-height: 500px;
+}
+
+.download-text {
+	width: 70%;
+}
+
+.google {
+	width: 150px;
+}
+
+.apple {
+	width: 135px;
+}
+
+.google:hover,
+.apple:hover {
+	cursor: pointer;
+}
+
+.download-img {
+    width: 30%;
+}
+
+/* Footer */
+
+.footer-container {
+	background-color: #fff;
+}
+
+.footer-custom {
+	padding: 1.5em;
+}
+
+.custom-links {
+	margin-top: 1em;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 800px) {
+	.nav-container > div {
+		display: flex;
+		flex-direction: column;
+		padding: 1.5em;
+	}
+
+	.nav-logo {
+		margin-bottom: .9em;
+	}
+
+	.showcase-container > div {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.showcase-text {
+		text-align: center;
+	}
+
+	.showcase-title {
+		font-size: 3rem;
+	}
+
+	.showcase-img {
+		margin-bottom: 2em;
+	}
+}
